@@ -1,0 +1,15 @@
+# Bleep build artifacts
+.bleep/
+.bloop/
+.bsp/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+.metals/
+.scala-build/
+
+# Compiled files
+*.class
+target/
