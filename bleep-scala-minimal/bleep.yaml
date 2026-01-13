@@ -1,0 +1,12 @@
+$schema: https://raw.githubusercontent.com/oyvindberg/bleep/master/schema.json
+$version: 0.0.5
+
+projects:
+  hello:
+    dependencies:
+      - org.scala-lang:scala-library:2.13.12
+    scala:
+      version: 2.13.12
+    sources: ./src/scala
+    platform:
+      name: jvm
