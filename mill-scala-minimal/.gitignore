@@ -1,0 +1,15 @@
+# Mill build artifacts
+out/
+.mill-*
+!.mill-version
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+.metals/
+.bsp/
+
+# Compiled files
+*.class
+target/
