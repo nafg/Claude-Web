@@ -1,0 +1,126 @@
+[
+  {
+    "label": "runClasspath.super.mill.scalalib.RunModule.runClasspath",
+    "millis": 80,
+    "cached": false,
+    "inputsHash": -1970611746
+  },
+  {
+    "label": "scriptSources",
+    "millis": 18,
+    "inputsHash": -817005757
+  },
+  {
+    "label": "parseBuildFiles",
+    "millis": 21,
+    "cached": false,
+    "dependencies": [
+      "scriptSources"
+    ],
+    "inputsHash": -592594582
+  },
+  {
+    "label": "scalaVersion",
+    "millis": 6,
+    "cached": false,
+    "inputsHash": -1970611746
+  },
+  {
+    "label": "platformSuffix",
+    "millis": 4,
+    "cached": false,
+    "inputsHash": -1970611746
+  },
+  {
+    "label": "resolveDepsExclusions",
+    "millis": 76,
+    "cached": false,
+    "inputsHash": -1970611746
+  },
+  {
+    "label": "scalaOrganization",
+    "millis": 5,
+    "cached": false,
+    "dependencies": [
+      "scalaVersion"
+    ],
+    "inputsHash": 627482227
+  },
+  {
+    "label": "cliImports",
+    "millis": 5,
+    "inputsHash": -1972633249
+  },
+  {
+    "label": "runIvyDeps",
+    "millis": 7,
+    "cached": false,
+    "dependencies": [
+      "cliImports"
+    ],
+    "inputsHash": -26475650
+  },
+  {
+    "label": "ivyDeps",
+    "millis": 26,
+    "cached": false,
+    "dependencies": [
+      "parseBuildFiles"
+    ],
+    "inputsHash": 1098850699
+  },
+  {
+    "label": "mandatoryIvyDeps.super.mill.scalalib.JavaModule.mandatoryIvyDeps",
+    "millis": 6,
+    "cached": false,
+    "inputsHash": -1970611746
+  },
+  {
+    "label": "scalaLibraryIvyDeps",
+    "millis": 5,
+    "cached": false,
+    "dependencies": [
+      "scalaOrganization",
+      "scalaVersion"
+    ],
+    "inputsHash": -872901926
+  },
+  {
+    "label": "mandatoryIvyDeps",
+    "millis": 5,
+    "cached": false,
+    "dependencies": [
+      "mandatoryIvyDeps.super.mill.scalalib.JavaModule.mandatoryIvyDeps",
+      "scalaLibraryIvyDeps"
+    ],
+    "inputsHash": 1854616870
+  },
+  {
+    "label": "transitiveIvyDeps",
+    "millis": 27,
+    "cached": false,
+    "dependencies": [
+      "scalaVersion",
+      "platformSuffix",
+      "resolveDepsExclusions",
+      "ivyDeps",
+      "mandatoryIvyDeps"
+    ],
+    "inputsHash": 1755187433
+  },
+  {
+    "label": "resolvedRunIvyDeps",
+    "millis": 1055,
+    "cached": false,
+    "dependencies": [
+      "parseBuildFiles",
+      "scalaVersion",
+      "platformSuffix",
+      "resolveDepsExclusions",
+      "scalaOrganization",
+      "runIvyDeps",
+      "transitiveIvyDeps"
+    ],
+    "inputsHash": 1151128596
+  }
+]
